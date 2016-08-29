@@ -13,6 +13,10 @@
 		C0F0F7041D745B5200265AED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F0F7021D745B5200265AED /* Main.storyboard */; };
 		C0F0F7061D745B5200265AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F0F7051D745B5200265AED /* Assets.xcassets */; };
 		C0F0F7091D745B5200265AED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F0F7071D745B5200265AED /* LaunchScreen.storyboard */; };
+		C0F0F7211D7464B400265AED /* GCDTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F0F71C1D7464B400265AED /* GCDTimerViewController.m */; };
+		C0F0F7221D7464B400265AED /* LeaksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F0F71E1D7464B400265AED /* LeaksTableViewController.m */; };
+		C0F0F7231D7464B400265AED /* RetainCyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F0F7201D7464B400265AED /* RetainCyleViewController.m */; };
+		C0F0F7271D746F9B00265AED /* RetainCycleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F0F7261D746F9B00265AED /* RetainCycleModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		C0F0F7051D745B5200265AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0F0F7081D745B5200265AED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0F0F70A1D745B5200265AED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0F0F71B1D7464B400265AED /* GCDTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimerViewController.h; sourceTree = "<group>"; };
+		C0F0F71C1D7464B400265AED /* GCDTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimerViewController.m; sourceTree = "<group>"; };
+		C0F0F71D1D7464B400265AED /* LeaksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaksTableViewController.h; sourceTree = "<group>"; };
+		C0F0F71E1D7464B400265AED /* LeaksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaksTableViewController.m; sourceTree = "<group>"; };
+		C0F0F71F1D7464B400265AED /* RetainCyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCyleViewController.h; sourceTree = "<group>"; };
+		C0F0F7201D7464B400265AED /* RetainCyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCyleViewController.m; sourceTree = "<group>"; };
+		C0F0F7251D746F9B00265AED /* RetainCycleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleModel.h; sourceTree = "<group>"; };
+		C0F0F7261D746F9B00265AED /* RetainCycleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainCycleModel.m; sourceTree = "<group>"; };
+		C0F0F7291D74709A00265AED /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,9 @@
 		C0F0F6F81D745B5200265AED /* MemoryLeaks */ = {
 			isa = PBXGroup;
 			children = (
+				C0F0F7241D746F5100265AED /* Model */,
+				C0F0F71A1D7464B400265AED /* Controller */,
+				C0F0F7291D74709A00265AED /* Common.h */,
 				C0F0F6FC1D745B5200265AED /* AppDelegate.h */,
 				C0F0F6FD1D745B5200265AED /* AppDelegate.m */,
 				C0F0F6FF1D745B5200265AED /* ViewController.h */,
@@ -77,6 +93,28 @@
 				C0F0F6FA1D745B5200265AED /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0F0F71A1D7464B400265AED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0F71D1D7464B400265AED /* LeaksTableViewController.h */,
+				C0F0F71E1D7464B400265AED /* LeaksTableViewController.m */,
+				C0F0F71B1D7464B400265AED /* GCDTimerViewController.h */,
+				C0F0F71C1D7464B400265AED /* GCDTimerViewController.m */,
+				C0F0F71F1D7464B400265AED /* RetainCyleViewController.h */,
+				C0F0F7201D7464B400265AED /* RetainCyleViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0F0F7241D746F5100265AED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0F0F7251D746F9B00265AED /* RetainCycleModel.h */,
+				C0F0F7261D746F9B00265AED /* RetainCycleModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F0F7231D7464B400265AED /* RetainCyleViewController.m in Sources */,
 				C0F0F7011D745B5200265AED /* ViewController.m in Sources */,
+				C0F0F7271D746F9B00265AED /* RetainCycleModel.m in Sources */,
+				C0F0F7211D7464B400265AED /* GCDTimerViewController.m in Sources */,
 				C0F0F6FE1D745B5200265AED /* AppDelegate.m in Sources */,
 				C0F0F6FB1D745B5200265AED /* main.m in Sources */,
+				C0F0F7221D7464B400265AED /* LeaksTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
